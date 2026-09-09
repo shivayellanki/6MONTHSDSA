@@ -1,0 +1,9 @@
+
+nums=[1,2,1,5,4,6]
+seen=set()
+ans=[]
+for num in nums:
+    if num not in seen:
+        ans.append(num)
+        seen.add(num)
+print(ans)
