@@ -1,0 +1,11 @@
+arr = [4, 2, 7, 1, 8, 3] 
+k=3
+ws=0
+for i in range(0,k):
+    ws+=arr[i]
+maxans=ws
+for j in range(k,len(arr)):
+    ws+=arr[j]
+    ws-=arr[j-k]
+    maxans=max(maxans,ws)
+print(maxans)  
