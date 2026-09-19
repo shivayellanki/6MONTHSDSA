@@ -1,0 +1,11 @@
+q="aaabbbccc"
+c=1
+res=[]
+for i in range(0,len(q)):
+    if i<len(q)-1 and q[i]==q[i+1]:
+        c+=1
+    else:
+        res.append(q[i])
+        res.append(c)
+        c=1
+print("".join(map(str,res))) 
