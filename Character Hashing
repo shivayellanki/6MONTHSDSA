@@ -1,0 +1,10 @@
+
+s="qwertyu"
+q="abacqerty"
+hashmap=[0]*26
+for ch in s:
+    index=ord(ch)-97
+    hashmap[index]+=1
+for ch in q:
+    index=ord(ch)-97
+    print(hashmap[index],end="")    
